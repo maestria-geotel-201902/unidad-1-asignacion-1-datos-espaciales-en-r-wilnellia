@@ -121,12 +121,12 @@ Nota que hasta este punto sólo realizaste mapas. En esta sección, realizarás 
 
 ``` r
 library(tidyverse)
-## ── Attaching packages ────────────────────────────────────── tidyverse 1.2.1 ──
+## ── Attaching packages ───────────────────────────────────────── tidyverse 1.2.1 ──
 ## ✔ ggplot2 3.2.1     ✔ purrr   0.3.3
 ## ✔ tibble  2.1.3     ✔ dplyr   0.8.3
 ## ✔ tidyr   1.0.0     ✔ stringr 1.4.0
 ## ✔ readr   1.3.1     ✔ forcats 0.4.0
-## ── Conflicts ───────────────────────────────────────── tidyverse_conflicts() ──
+## ── Conflicts ──────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()
 ```
@@ -367,9 +367,9 @@ prov %>% dplyr::filter(PROV %in% c('06', '26', '29')) %>% dplyr::select(areaenm2
 -   Genera un panel de mapas mediante `plot` usando la tubería de `tidyverse`, donde se muestre `mun` representado según todas sus columnas disponibles.
 
 ``` r
-mun <- st_read(dsn = 'data/divisionRD.gpkg', layer = 'PROVCenso2010')
-## Reading layer `PROVCenso2010' from data source `/home/wilne/unidad-1-asignacion-1-datos-espaciales-en-r-wilnellia/data/divisionRD.gpkg' using driver `GPKG'
-## Simple feature collection with 32 features and 4 fields
+mun <- st_read(dsn = 'data/divisionRD.gpkg', layer = 'MUNCenso2010')
+## Reading layer `MUNCenso2010' from data source `/home/wilne/unidad-1-asignacion-1-datos-espaciales-en-r-wilnellia/data/divisionRD.gpkg' using driver `GPKG'
+## Simple feature collection with 155 features and 5 fields
 ## geometry type:  MULTIPOLYGON
 ## dimension:      XY
 ## bbox:           xmin: 182215.8 ymin: 1933532 xmax: 571365.3 ymax: 2205216

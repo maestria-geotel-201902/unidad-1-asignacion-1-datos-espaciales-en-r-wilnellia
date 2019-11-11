@@ -153,7 +153,7 @@ prov %>% dplyr::filter(PROV %in% c('06', '26', '29')) %>% dplyr::select(areaenm2
 * Genera un panel de mapas mediante `plot` usando la tubería de `tidyverse`, donde se muestre `mun` representado según todas sus columnas disponibles.
 
 ```{r mun1}
-mun <- st_read(dsn = 'data/divisionRD.gpkg', layer = 'PROVCenso2010')
+mun <- st_read(dsn = 'data/divisionRD.gpkg', layer = 'MUNCenso2010')
 plot(mun)
 mun %>% plot
 ```
